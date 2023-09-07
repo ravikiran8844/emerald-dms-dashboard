@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from welly.dexignzone.com/laravel/demo/index by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 May 2022 05:35:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Welly | Dashboard</title>
+	
+	<meta name="description" content="Some description for the page"/>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="public/images/favicon.png">
+	
+	
+	
+	 
+						<link href="public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
+						<link href="public/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet" type="text/css"/>
+						<link href="public/vendor/chartist/css/chartist.min.css" rel="stylesheet" type="text/css"/>
+						<link href="public/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+				
+
+	
+	 
+					<link href="public/css/style.css" rel="stylesheet" type="text/css"/>
+					<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet" type="text/css"/>
+				
+
+
+        <link href="public/css/custom-styles.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <main class="dms_login_page d-flex align-items-center">
+        <div class="container py-5">
+            <div class="col-12 col-md-7 m-auto">
+                <div class="text-center mb-5">
+                    <img class="img-fluid" src="public/images/emerald-logo.png" height="122" width="160" alt="">
+                </div>
+                <div>
+                    <div class="dms_login_page_title mb-4 ">Enter OTP</div>
+                    <div class="dms_login_page_text mb-5">Code is sent to +91 99*** **643</div>
+                </div>
+                <div>
+                    
+
+                   <div class="dms_login_page_input-item m-auto">
+                    <hr class="mb-5">
+
+                    <div id="inputs" class="otp-inputs">
+                        <input class="input" type="text" 
+                            inputmode="numeric" maxlength="1" />
+                        <input class="input" type="text" 
+                            inputmode="numeric" maxlength="1" />
+                        <input class="input" type="text" 
+                            inputmode="numeric" maxlength="1" />
+                        <input class="input" type="text" 
+                            inputmode="numeric" maxlength="1" />
+                    </div>
+                   
+                      <button class="mt-5 btn dms_login_page_button w-100 py-3">
+                        Continue
+                       </button>
+                   
+                    </div>
+                    <div class="text-center mt-3">
+                        <div class="otp-not-received-text">Don’t received code?  <span ><a href="#" class="resend-otp-text">Resend</a></span></div>
+                    </div>
+
+                   
+
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+
+    <script>
+        const inputs = document.getElementById("inputs");
+  
+  inputs.addEventListener("input", function (e) {
+      const target = e.target;
+      const val = target.value;
+    
+      if (isNaN(val)) {
+          target.value = "";
+          return;
+      }
+    
+      if (val != "") {
+          const next = target.nextElementSibling;
+          if (next) {
+              next.focus();
+          }
+      }
+  });
+    
+  inputs.addEventListener("keyup", function (e) {
+      const target = e.target;
+      const key = e.key.toLowerCase();
+    
+      if (key == "backspace" || key == "delete") {
+          target.value = "";
+          const prev = target.previousElementSibling;
+          if (prev) {
+              prev.focus();
+          }
+          return;
+      }
+  });
+    </script>
+    <!--**********************************
+        Scripts
+    ***********************************-->
+	<script src="public/vendor/global/global.min.js" type="text/javascript"></script>
+					<script src="public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
+				<script src="public/vendor/chart.js/Chart.bundle.min.js" type="text/javascript"></script>
+				<script src="public/vendor/apexchart/apexchart.js" type="text/javascript"></script>
+				<script src="public/vendor/bootstrap-datetimepicker/js/moment.js" type="text/javascript"></script>
+				<script src="public/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+				<script src="public/vendor/peity/jquery.peity.min.js" type="text/javascript"></script>
+				<script src="public/vendor/apexchart/apexchart.js" type="text/javascript"></script>
+				<script src="public/js/dashboard/dashboard-1.js" type="text/javascript"></script>
+				<script src="public/js/custom.min.js" type="text/javascript"></script>
+				<script src="public/js/deznav-init.js" type="text/javascript"></script>
+		<!--		<script src="https://welly.dexignzone.com/laravel/demo/js/custom.min.js" type="text/javascript"></script>
+			<script src="https://welly.dexignzone.com/laravel/demo/js/deznav-init.js" type="text/javascript"></script> -->
+<!--	
+ 	--></body>
+</html>
