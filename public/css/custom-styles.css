@@ -2,7 +2,7 @@
 
 body{
     font-family: Inter;
-}
+    background: #F5F6F6 !important;}
 .deznav,.nav-header{
     background: #262626 !important;
 }
@@ -277,4 +277,28 @@ background: #FFF;
     font-style: normal;
     font-weight: 500;
     line-height: 100%; /* 12px */
+}
+.custom-btn-border{
+    border-radius: 9px;
+    border: 1px solid #E3E3E3;
+    background: #FBFBFB;
+    text-decoration: none;
+    padding: 5px 10px !important;
+    margin: 10px;
+    width: max-content;}
+.add-new-dealers_btn,.add-new-dealers_btn:hover{
+    border-radius: 7.838px;
+background: #F96421;
+color: #FFF;
+font-family: Inter;
+font-size: 12.541px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 12.541px */
+}
+.bootstrap-select .btn {
+
+    padding: 5px 10px !important;
+    border: none !important;
+    outline: none !important;
 }
