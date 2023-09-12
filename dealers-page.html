@@ -2,13 +2,13 @@
 <html lang="en">
 
 
-<!-- Mirrored from welly.dexignzone.com/laravel/demo/uc-lightgallery by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 May 2022 05:37:28 GMT -->
+<!-- Mirrored from welly.dexignzone.com/laravel/demo/index by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 May 2022 05:35:45 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Welly | Lightgallery</title>
+    <title>Welly | Dashboard</title>
 	
 	<meta name="description" content="Some description for the page"/>
     <!-- Favicon icon -->
@@ -18,12 +18,14 @@
 	
 	 
 						<link href="public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
-						<link href="public/vendor/lightgallery/css/lightgallery.min.css" rel="stylesheet" type="text/css"/>
+						<link href="public/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet" type="text/css"/>
+						<link href="public/vendor/chartist/css/chartist.min.css" rel="stylesheet" type="text/css"/>
+						<link href="public/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
 				
 
 	
 	 
-					<link href="public/css/style.css" rel="stylesheet" type="text/css"/>
+					<link href="public/css/style.css" rel="stylesheet" type="text/css"/>           <link href="public/css/custom-styles.css" rel="stylesheet">
 					<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet" type="text/css"/>
 				
 
@@ -54,12 +56,9 @@
         <!--**********************************
             Nav header start
         ***********************************-->
-        <div class="nav-header">
-            <a href="index.html" class="brand-logo">
-			                <img class="logo-abbr" src="public/images/logo.png" alt="">
-						                <img class="logo-compact" src="public/images/logo-text.png" alt="">
-                <img class="brand-title" src="public/images/logo-text.png" alt="">
-				
+        <div class="nav-header text-center">
+            <a href="index.html">
+							<img class="img-fluid p-3" src="public/images/emerald-logo.png" alt="">
             </a>
 
             <div class="nav-control">
@@ -586,13 +585,9 @@
                 <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
-                            <div class="dashboard_bar">
-								<div class="input-group search-area d-lg-inline-flex d-none">
-									<input type="text" class="form-control" placeholder="Search here...">
-									<div class="input-group-append">
-										<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
-									</div>
-								</div>
+                            <div>
+                              <div>Dashboard</div>
+                              <div>Welcome to EDMS Silver </div>
                             </div>
                         </div>
                         <ul class="navbar-nav header-right">
@@ -791,22 +786,19 @@
         <div class="deznav">
             <div class="deznav-scroll">
 				<ul class="metismenu" id="menu">
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <li><a class="ai-icon" href="index.html">
 							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Dashboard</span>
 						</a>
-                        <ul aria-expanded="false">
-							<li><a href="index.html">Dashboard</a></li>
-							<li><a href="patient.html">Patient</a></li>
-							<li><a href="patient-details.html">Patient Details</a></li>
-							<li><a href="doctor.html">Doctors</a></li>
-							<li><a href="doctor-details.html">Doctor Details</a></li>
-							<li><a href="reviews.html">Reviews</a></li>
-						</ul>
                     </li>
+
+
+
+
+
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-television"></i>
-							<span class="nav-text">Apps</span>
+							<span class="nav-text">Dealers</span>
 						</a>
                         <ul aria-expanded="false">
                             <li><a href="app-profile.html">Profile</a></li>
@@ -818,122 +810,17 @@
                                 </ul>
                             </li>
                             <li><a href="app-calender.html">Calendar</a></li>
-							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="ecom-product-grid.html">Product Grid</a></li>
-									<li><a href="ecom-product-list.html">Product List</a></li>
-									<li><a href="ecom-product-detail.html">Product Details</a></li>
-									<li><a href="ecom-product-order.html">Order</a></li>
-									<li><a href="ecom-checkout.html">Checkout</a></li>
-									<li><a href="ecom-invoice.html">Invoice</a></li>
-									<li><a href="ecom-customers.html">Customers</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-controls-3"></i>
-							<span class="nav-text">Charts</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="chart-flot.html">Flot</a></li>
-                            <li><a href="chart-morris.html">Morris</a></li>
-                            <li><a href="chart-chartjs.html">Chartjs</a></li>
-                            <li><a href="chart-chartist.html">Chartist</a></li>
-                            <li><a href="chart-sparkline.html">Sparkline</a></li>
-                            <li><a href="chart-peity.html">Peity</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-internet"></i>
-							<span class="nav-text">Bootstrap</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="ui-accordion.html">Accordion</a></li>
-                            <li><a href="ui-alert.html">Alert</a></li>
-                            <li><a href="ui-badge.html">Badge</a></li>
-                            <li><a href="ui-button.html">Button</a></li>
-                            <li><a href="ui-modal.html">Modal</a></li>
-                            <li><a href="ui-button-group.html">Button Group</a></li>
-                            <li><a href="ui-list-group.html">List Group</a></li>
-                            <li><a href="ui-media-object.html">Media Object</a></li>
-                            <li><a href="ui-card.html">Cards</a></li>
-                            <li><a href="ui-carousel.html">Carousel</a></li>
-                            <li><a href="ui-dropdown.html">Dropdown</a></li>
-                            <li><a href="ui-popover.html">Popover</a></li>
-                            <li><a href="ui-progressbar.html">Progressbar</a></li>
-                            <li><a href="ui-tab.html">Tab</a></li>
-                            <li><a href="ui-typography.html">Typography</a></li>
-                            <li><a href="ui-pagination.html">Pagination</a></li>
-                            <li><a href="ui-grid.html">Grid</a></li>
+
+
 
                         </ul>
                     </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-heart"></i>
-							<span class="nav-text">Plugins</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="uc-select2.html">Select 2</a></li>
-                            <li><a href="uc-nestable.html">Nestedable</a></li>
-                            <li><a href="uc-noui-slider.html">Noui Slider</a></li>
-                            <li><a href="uc-sweetalert.html">Sweet Alert</a></li>
-                            <li><a href="uc-toastr.html">Toastr</a></li>
-                            <li><a href="map-jqvmap.html">Jqv Map</a></li>
-                            <li><a href="uc-lightgallery.html">Lightgallery</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
-							<i class="flaticon-381-settings-2"></i>
-							<span class="nav-text">Widget</span>
-						</a>
-					</li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-notepad"></i>
-							<span class="nav-text">Forms</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="form-element.html">Form Elements</a></li>
-                            <li><a href="form-wizard.html">Wizard</a></li>
-                            <li><a href="form-editor-summernote.html">Summernote</a></li>
-                            <li><a href="form-pickers.html">Pickers</a></li>
-                            <li><a href="form-validation-jquery.html">Jquery Validate</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-network"></i>
-							<span class="nav-text">Table</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
-                            <li><a href="table-datatable-basic.html">Datatable</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-layer-1"></i>
-							<span class="nav-text">Pages</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="page-register.html">Register</a></li>
-                            <li><a href="page-login.html">Login</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="page-error-400.html">Error 400</a></li>
-                                    <li><a href="page-error-403.html">Error 403</a></li>
-                                    <li><a href="page-error-404.html">Error 404</a></li>
-                                    <li><a href="page-error-500.html">Error 500</a></li>
-                                    <li><a href="page-error-503.html">Error 503</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="page-lock-screen.html">Lock Screen</a></li>
-                        </ul>
-                    </li>
+ 
+
+                   
                 </ul>
 				
-				<div class="copyright">
-					<p><strong>Welly Hospital Admin Dashboard</strong> © 2020 All Rights Reserved</p>
-					<p>Made with ♥ by DexignZone</p>
-				</div>
+
 			</div>
         </div>
         <!--**********************************
@@ -947,57 +834,533 @@
         <!--**********************************
             Content body start
         ***********************************-->
-        <div class="content-body">
-            <!-- row -->
-            
-<div class="container-fluid">
-  <div class="page-titles">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="javascript:void(0)"> Plugins</a></li>
-        <li class="breadcrumb-item active"><a href="javascript:void(0)">Light Gallery</a></li>
-      </ol>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-        <div class="card">
-          <div class="card-header">
-            <h4 class="card-title">Light Gallery</h4>
-          </div>
-          <div class="card-body pb-1">
-            <div id="lightgallery" class="row">
-              <a href="public/images/big/img1.jpg" data-exthumbimage="https://welly.dexignzone.com/laravel/demo/images/big/img1.jpg" data-src="https://welly.dexignzone.com/laravel/demo/images/big/img1.jpg" class="col-lg-3 col-md-6 mb-4">
-                <img src="public/images/big/img1.jpg" style="width:100%;"/>
-              </a>
-              <a href="public/images/big/img2.jpg" data-exthumbimage="https://welly.dexignzone.com/laravel/demo/images/big/img2.jpg" data-src="https://welly.dexignzone.com/laravel/demo/images/big/img2.jpg" class="col-lg-3 col-md-6 mb-4">
-                <img src="public/images/big/img2.jpg" style="width:100%;" />
-              </a>
-              <a href="public/images/big/img3.jpg" data-exthumbimage="https://welly.dexignzone.com/laravel/demo/images/big/img3.jpg" data-src="https://welly.dexignzone.com/laravel/demo/images/big/img3.jpg" class="col-lg-3 col-md-6 mb-4">
-                <img src="public/images/big/img3.jpg" style="width:100%;" />
-              </a>
-              <a href="public/images/big/img4.jpg" data-exthumbimage="https://welly.dexignzone.com/laravel/demo/images/big/img4.jpg" data-src="https://welly.dexignzone.com/laravel/demo/images/big/img4.jpg" class="col-lg-3 col-md-6 mb-4">
-                <img src="public/images/big/img4.jpg" style="width:100%;" />
-              </a>
-              <a href="public/images/big/img5.jpg" data-exthumbimage="https://welly.dexignzone.com/laravel/demo/images/big/img5.jpg" data-src="https://welly.dexignzone.com/laravel/demo/images/big/img5.jpg" class="col-lg-3 col-md-6 mb-4">
-                <img src="public/images/big/img5.jpg" style="width:100%;"/>
-              </a>
-              <a href="public/images/big/img6.jpg" data-exthumbimage="https://welly.dexignzone.com/laravel/demo/images/big/img6.jpg" data-src="https://welly.dexignzone.com/laravel/demo/images/big/img6.jpg" class="col-lg-3 col-md-6 mb-4">
-                <img src="public/images/big/img6.jpg" style="width:100%;" />
-              </a>
-              <a href="public/images/big/img7.jpg" data-exthumbimage="https://welly.dexignzone.com/laravel/demo/images/big/img7.jpg" data-src="https://welly.dexignzone.com/laravel/demo/images/big/img7.jpg" class="col-lg-3 col-md-6 mb-4">
-                <img src="public/images/big/img7.jpg" style="width:100%;" />
-              </a>
-              <a href="public/images/big/img8.jpg" data-exthumbimage="https://welly.dexignzone.com/laravel/demo/images/big/img8.jpg" data-src="https://welly.dexignzone.com/laravel/demo/images/big/img8.jpg" class="col-lg-3 col-md-6 mb-4">
-                <img src="public/images/big/img8.jpg" style="width:100%;" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- /# card -->
-    </div>
-  </div>
+    <div class="content-body">
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-xl-4 col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="media align-items-center">
+                        <div class="media-body mr-3">
+                          <span>Total Dealers</span>
+                          <div class="fs-20 text-black"><span class="fs-30 font-w600">120</span>/200</div>
+
+                        </div>
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40.5133" height="40.5133" rx="11.5752" fill="#EBE0FF"/>
+                            <path d="M20.2565 19.4669C22.0577 19.4669 23.5178 18.0068 23.5178 16.2056C23.5178 14.4045 22.0577 12.9443 20.2565 12.9443C18.4554 12.9443 16.9952 14.4045 16.9952 16.2056C16.9952 18.0068 18.4554 19.4669 20.2565 19.4669Z" fill="#8C6FC0"/>
+                            <path d="M28.0833 16.8575C29.8844 16.8575 31.3446 15.3974 31.3446 13.5962C31.3446 11.7951 29.8844 10.335 28.0833 10.335C26.2821 10.335 24.822 11.7951 24.822 13.5962C24.822 15.3974 26.2821 16.8575 28.0833 16.8575Z" fill="#8C6FC0"/>
+                            <path d="M12.4292 16.8575C14.2304 16.8575 15.6905 15.3974 15.6905 13.5962C15.6905 11.7951 14.2304 10.335 12.4292 10.335C10.6281 10.335 9.16797 11.7951 9.16797 13.5962C9.16797 15.3974 10.6281 16.8575 12.4292 16.8575Z" fill="#8C6FC0"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.1267 25.3373V29.2508C26.1267 29.4236 26.0582 29.59 25.9356 29.7119C25.8136 29.8346 25.6473 29.9031 25.4744 29.9031H15.0384C14.8655 29.9031 14.6992 29.8346 14.5772 29.7119C14.4546 29.59 14.3861 29.4236 14.3861 29.2508V25.3373C14.3861 22.8157 16.4303 20.7715 18.9519 20.7715H21.5609C24.0825 20.7715 26.1267 22.8157 26.1267 25.3373Z" fill="#8C6FC0"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.4314 27.2937H33.3017C33.4746 27.2937 33.6409 27.2252 33.7629 27.1026C33.8855 26.9806 33.954 26.8143 33.954 26.6414V22.7279C33.954 20.2063 31.9098 18.1621 29.3882 18.1621H26.7792C25.4016 18.1621 24.1662 18.7726 23.3287 19.7373C25.7069 20.4874 27.4314 22.7109 27.4314 25.3369V27.2937Z" fill="#8C6FC0"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1843 19.7373C16.3468 18.7726 15.1114 18.1621 13.7339 18.1621H11.1249C8.60325 18.1621 6.55908 20.2063 6.55908 22.7279V26.6414C6.55908 26.8143 6.62757 26.9806 6.75019 27.1026C6.87216 27.2252 7.03849 27.2937 7.21134 27.2937H13.0816V25.3369C13.0816 22.7109 14.8062 20.4874 17.1843 19.7373Z" fill="#8C6FC0"/>
+                            </svg>
+                            
+                      </div>
+                      <div class="mt-4 d-flex justify-content-between align-items-center ">
+                        <div class="total-dealers-card_bottom-text px-2 py-1">+5.9%</div>
+                        <div class="dropdown custom-dropdown">
+                          <div class="btn sharp tp-btn" data-toggle="dropdown" aria-expanded="false">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+                          </div>
+                          <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(39px, 40px, 0px);">
+                              <a class="dropdown-item" href="#">Option 1</a>
+                              <a class="dropdown-item" href="#">Option 2</a>
+                              <a class="dropdown-item" href="#">Option 3</a>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="media align-items-center">
+                          <div class="media-body mr-3">
+                            <span>Active Dealers</span>
+                            <div class="text-black fs-30 font-w600">19</div>
+  
+                          </div>
+                          <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.708008" y="0.0439453" width="40.5133" height="40.5133" rx="11.5752" fill="#FEF0E9"/>
+                            <path d="M17.1888 19.5108C18.9899 19.5108 20.45 18.0507 20.45 16.2496C20.45 14.4484 18.9899 12.9883 17.1888 12.9883C15.3876 12.9883 13.9275 14.4484 13.9275 16.2496C13.9275 18.0507 15.3876 19.5108 17.1888 19.5108Z" fill="#F96421"/>
+                            <path d="M25.0158 16.9015C26.8169 16.9015 28.2771 15.4413 28.2771 13.6402C28.2771 11.839 26.8169 10.3789 25.0158 10.3789C23.2146 10.3789 21.7545 11.839 21.7545 13.6402C21.7545 15.4413 23.2146 16.9015 25.0158 16.9015Z" fill="#F96421"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0589 25.3812V29.2947C23.0589 29.4676 22.9905 29.6339 22.8678 29.7559C22.7459 29.8785 22.5795 29.947 22.4067 29.947H11.9706C11.7978 29.947 11.6314 29.8785 11.5095 29.7559C11.3868 29.6339 11.3184 29.4676 11.3184 29.2947V25.3812C11.3184 22.8596 13.3625 20.8154 15.8841 20.8154H18.4932C21.0148 20.8154 23.0589 22.8596 23.0589 25.3812Z" fill="#F96421"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3637 27.3376H30.234C30.4068 27.3376 30.5731 27.2691 30.6951 27.1465C30.8177 27.0245 30.8862 26.8582 30.8862 26.6854V22.7718C30.8862 20.2502 28.8421 18.2061 26.3204 18.2061H23.7114C22.3339 18.2061 21.0985 18.8166 20.261 19.7813C22.6391 20.5313 24.3637 22.7549 24.3637 25.3809V27.3376Z" fill="#F96421"/>
+                            </svg>
+                            
+                              
+                        </div>
+                        <div class="mt-4 d-flex justify-content-between align-items-center ">
+                            <div class="active-dealers-card_bottom-text px-2 py-1">+5.9%</div>
+                            <div class="dropdown custom-dropdown">
+                              <div class="btn sharp tp-btn" data-toggle="dropdown" aria-expanded="false">
+                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+                              </div>
+                              <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(39px, 40px, 0px);">
+                                  <a class="dropdown-item" href="#">Option 1</a>
+                                  <a class="dropdown-item" href="#">Option 2</a>
+                                  <a class="dropdown-item" href="#">Option 3</a>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="media align-items-center">
+                          <div class="media-body mr-3">
+                            <span>Dormant Dealers</span>
+                            <div class="text-black fs-30 font-w600">12</div>
+  
+                          </div>
+                          <div class="dropdown custom-dropdown dropdown-border">
+                            <div data-toggle="dropdown">Last 7 days
+                                <i class="fa fa-angle-down ml-3"></i>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Last 1 Month</a>
+                                <a class="dropdown-item" href="#">Last 6 Month</a>
+                                <a class="dropdown-item" href="#">Last 10 Month</a>
+                            </div>
+                        </div>
+                              
+                        </div>
+                        <div class="mt-4 d-flex justify-content-between align-items-center ">
+                          <div class="dormant-dealers-card_bottom-text px-2 py-1">+5.9%</div>
+                          <div class="dropdown custom-dropdown">
+                            <div class="btn sharp tp-btn" data-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(39px, 40px, 0px);">
+                                <a class="dropdown-item" href="#">Option 1</a>
+                                <a class="dropdown-item" href="#">Option 2</a>
+                                <a class="dropdown-item" href="#">Option 3</a>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-12">
+                    <div class="card px-4 py-5">
+                        <div>export</div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between flex-wrap">
+                            <div class="mb-3">showing 21 - 30 of 26 results</div>
+							<div>
+								<label for="items-selected">Items per page</label>
+								<select class="form-select" id="items-selected">
+									<option selected value="10">10</option>
+									<option value="20">20</option>
+									<option value="30">30</option>
+								  </select>
+							</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-responsive-md">
+                                    <thead>
+                                        <tr>
+                                            <th class="width50">
+                      <div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
+                        <input type="checkbox" class="custom-control-input" id="checkAll" required="">
+                        <label class="custom-control-label" for="checkAll"></label>
+                      </div>
+                    </th>
+					<th>Order ID</th>
+					<th>Dealer Name</th>
+					<th>Project</th>
+					<th>Status</th>
+					<th>order date</th>
+					<th>Delivery Status</th>
+					<th>Price</th>
+					<th>Documentation</th>
+
+                          
+											<th>Info <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M6.75335 1.94538C6.42158 2.069 6.21776 2.41511 6.21776 2.85643C6.21776 3.17671 6.29106 3.38486 6.4581 3.53066C6.64109 3.69053 6.83302 3.70892 7.07052 3.59233C7.30396 3.47588 7.43894 3.29343 7.5186 2.98722C7.68618 2.33558 7.26325 1.76333 6.75335 1.94538Z" fill="#7E7E7E"/>
+												<path d="M6.18518 4.15336C5.78064 4.23695 5.33621 4.57927 4.93519 5.11892C4.65116 5.4979 4.52754 5.76339 4.58205 5.86591C4.60382 5.90622 4.64372 5.93868 4.67348 5.93868C4.69917 5.93868 4.84822 5.74933 5.00484 5.51629C5.16133 5.2865 5.33621 5.05711 5.39464 5.00585C5.6132 4.82042 5.78483 4.94404 5.70423 5.23564C5.68637 5.31247 5.48918 5.96424 5.27413 6.68567C4.80778 8.23497 4.71283 8.64208 4.70959 9.09017C4.70959 9.37068 4.72027 9.43627 4.79304 9.54934C4.96102 9.82228 5.32904 9.85555 5.76969 9.64131C6.37101 9.342 7.23392 8.31112 7.1974 7.93215C7.19091 7.85884 7.169 7.81542 7.1364 7.81542C7.08122 7.81542 7.03077 7.87764 6.65179 8.40268C6.32354 8.85402 6.11295 8.928 6.11295 8.58852C6.11295 8.50832 6.30204 7.77201 6.53142 6.94846C6.76081 6.12546 6.96896 5.34993 6.99087 5.2186C7.04619 4.91645 7.01684 4.55533 6.925 4.4025C6.79733 4.18244 6.51668 4.0875 6.18518 4.15336Z" fill="#7E7E7E"/>
+												<path d="M6.07589 12.1523C2.72531 12.1523 0 9.42606 0 6.07575C0 2.72545 2.72531 0 6.07589 0C9.42592 0 12.152 2.72531 12.152 6.07575C12.152 9.42619 9.42579 12.1523 6.07589 12.1523ZM6.07589 0.437132C2.96687 0.437132 0.437132 2.96687 0.437132 6.07575C0.437132 9.1845 2.96646 11.7146 6.07589 11.7146C9.18504 11.7146 11.7144 9.18531 11.7144 6.07575C11.7144 2.96646 9.18504 0.437132 6.07589 0.437132Z" fill="#7E7E7E"/>
+												</svg>
+												</span></th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+             <tr>
+                                            <td>
+                      <div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheckBox2" required="">
+                        <label class="custom-control-label" for="customCheckBox2"></label>
+                      </div>
+                    </td>
+                                            
+					
+					<td>999-5878</td>
+					<td>Premlata Silver L..</td>
+					<td>Silver Chain (+3)</td>
+					<td>	
+						<select class="form-select status-dropdown starting">
+						<option selected value="starting">Starting</option>
+						<option value="wip">Wip</option>
+						<option value="pending">Pending</option>
+						<option value="overdue">Overdue</option>
+
+					  </select></td>
+					<td>Mar 13, 2023</td>
+					<td class="text-blue">&#x2022; Sent</td>
+					<td>448.81</td>
+		
+
+                    <td>
+                      <div class="d-flex  justify-content-center">
+                        <a href="#" class="py-2 mr-1">
+							<img src="public/icons/excel_icon.png" alt="">
+						</a>
+                        <a href="#" class="py-2">
+							<img src="public/icons/pdf_icon.png" alt="">
+
+						</a>
+                      </div>
+                    </td>
+					
+					<td>
+						<div class="dropdown custom-dropdown">
+							<div class="btn sharp tp-btn" data-toggle="dropdown" aria-expanded="false">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+							</div>
+							<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(39px, 40px, 0px);">
+								<a class="dropdown-item" href="#">Option 1</a>
+								<a class="dropdown-item" href="#">Option 2</a>
+								<a class="dropdown-item" href="#">Option 3</a>
+							</div>
+						</div>
+					</td>
+
+                </tr>
+
+
+				<tr>
+					<td>
+<div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
+<input type="checkbox" class="custom-control-input" id="customCheckBox2" required="">
+<label class="custom-control-label" for="customCheckBox2"></label>
 </div>
-			
+</td>
+					
+
+<td>999-5878</td>
+<td>K D Coin Craft</td>
+<td>SilverSolid Idol (+5)</td>
+<td>	
+<select class="form-select status-dropdown wip">
+<option  value="starting">Starting</option>
+<option selected value="wip">Wip</option>
+<option value="pending">Pending</option>
+<option value="overdue">Overdue</option>
+
+</select></td>
+<td>Mar 13, 2023</td>
+<td class="text-blue">&#x2022; Sent</td>
+<td>7500</td>
+
+
+<td>
+<div class="d-flex  justify-content-center">
+<a href="#" class="py-2 mr-1">
+	<img src="public/icons/excel_icon.png" alt="">
+</a>
+<a href="#" class="py-2">
+	<img src="public/icons/pdf_icon.png" alt="">
+
+</a>
+</div>
+</td>
+
+<td>
+<div class="dropdown custom-dropdown">
+	<div class="btn sharp tp-btn" data-toggle="dropdown" aria-expanded="false">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+	</div>
+	<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(39px, 40px, 0px);">
+		<a class="dropdown-item" href="#">Option 1</a>
+		<a class="dropdown-item" href="#">Option 2</a>
+		<a class="dropdown-item" href="#">Option 3</a>
+	</div>
+</div>
+</td>
+
+</tr>
+
+
+<tr>
+	<td>
+<div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
+<input type="checkbox" class="custom-control-input" id="customCheckBox2" required="">
+<label class="custom-control-label" for="customCheckBox2"></label>
+</div>
+</td>
+	
+
+<td>999-5878</td>
+<td>Jai Durga Jewell...</td>
+<td>EF Idol (+3)</td>
+<td>	
+<select class="form-select status-dropdown pending">
+<option selected value="starting">Starting</option>
+<option value="wip">Wip</option>
+<option value="pending">Pending</option>
+<option value="overdue">Overdue</option>
+
+</select></td>
+<td>Mar 13, 2023</td>
+<td class="text-gray">&#x2022; Draft</td>
+<td>448.81</td>
+
+
+<td>
+<div class="d-flex  justify-content-center">
+<a href="#" class="py-2 mr-1">
+<img src="public/icons/excel_icon.png" alt="">
+</a>
+<a href="#" class="py-2">
+<img src="public/icons/pdf_icon.png" alt="">
+
+</a>
+</div>
+</td>
+
+<td>
+<div class="dropdown custom-dropdown">
+<div class="btn sharp tp-btn" data-toggle="dropdown" aria-expanded="false">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+</div>
+<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(39px, 40px, 0px);">
+<a class="dropdown-item" href="#">Option 1</a>
+<a class="dropdown-item" href="#">Option 2</a>
+<a class="dropdown-item" href="#">Option 3</a>
+</div>
+</div>
+</td>
+
+</tr>
+
+
+<tr>
+	<td>
+<div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
+<input type="checkbox" class="custom-control-input" id="customCheckBox2" required="">
+<label class="custom-control-label" for="customCheckBox2"></label>
+</div>
+</td>
+	
+
+<td>999-5878</td>
+<td>Chandi Bazar</td>
+<td>Silver Casting (+3)</td>
+<td>	
+<select class="form-select status-dropdown overdue">
+<option  value="starting">Starting</option>
+<option value="wip">Wip</option>
+<option value="pending">Pending</option>
+<option selected value="overdue">Overdue</option>
+
+</select></td>
+<td>Mar 13, 2023</td>
+<td class="text-blue">&#x2022; Sent</td>
+<td>448.81</td>
+
+
+<td>
+<div class="d-flex  justify-content-center">
+<a href="#" class="py-2 mr-1">
+<img src="public/icons/excel_icon.png" alt="">
+</a>
+<a href="#" class="py-2">
+<img src="public/icons/pdf_icon.png" alt="">
+
+</a>
+</div>
+</td>
+
+<td>
+<div class="dropdown custom-dropdown">
+<div class="btn sharp tp-btn" data-toggle="dropdown" aria-expanded="false">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+</div>
+<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(39px, 40px, 0px);">
+<a class="dropdown-item" href="#">Option 1</a>
+<a class="dropdown-item" href="#">Option 2</a>
+<a class="dropdown-item" href="#">Option 3</a>
+</div>
+</div>
+</td>
+
+</tr>
+
+
+
+
+
+<tr>
+	<td>
+<div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
+<input type="checkbox" class="custom-control-input" id="customCheckBox2" required="">
+<label class="custom-control-label" for="customCheckBox2"></label>
+</div>
+</td>
+	
+
+<td>999-5878</td>
+<td>Shubhay Jewels</td>
+<td>EF Idol (+1)</td>
+<td>	
+<select class="form-select status-dropdown completed">
+<option  value="starting">Starting</option>
+<option value="wip">Wip</option>
+<option value="pending">Pending</option>
+<option  value="overdue">Overdue</option>
+<option selected value="completed">Completed</option>
+
+
+</select></td>
+<td>Mar 13, 2023</td>
+<td class="text-danger">&#x2022; Rejected</td>
+<td>448.81</td>
+
+
+<td>
+<div class="d-flex  justify-content-center">
+<a href="#" class="py-2 mr-1">
+<img src="public/icons/excel_icon.png" alt="">
+</a>
+<a href="#" class="py-2">
+<img src="public/icons/pdf_icon.png" alt="">
+
+</a>
+</div>
+</td>
+
+<td>
+<div class="dropdown custom-dropdown">
+<div class="btn sharp tp-btn" data-toggle="dropdown" aria-expanded="false">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+</div>
+<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(39px, 40px, 0px);">
+<a class="dropdown-item" href="#">Option 1</a>
+<a class="dropdown-item" href="#">Option 2</a>
+<a class="dropdown-item" href="#">Option 3</a>
+</div>
+</div>
+</td>
+
+</tr>
+
+
+
+
+
+<tr>
+	<td>
+<div class="custom-control custom-checkbox checkbox-success check-lg mr-3">
+<input type="checkbox" class="custom-control-input" id="customCheckBox2" required="">
+<label class="custom-control-label" for="customCheckBox2"></label>
+</div>
+</td>
+	
+
+<td>999-5878</td>
+<td>Arvind Jewellers</td>
+<td>EF Idol (+1)</td>
+<td>	
+<select class="form-select status-dropdown overdue">
+<option  value="starting">Starting</option>
+<option value="wip">Wip</option>
+<option value="pending">Pending</option>
+<option selected value="overdue">Overdue</option>
+
+</select></td>
+<td>Mar 13, 2023</td>
+<td class="text-blue text-warning">&#x2022; In Query</td>
+<td>448.81</td>
+
+
+<td>
+<div class="d-flex  justify-content-center">
+<a href="#" class="py-2 mr-1">
+<img src="public/icons/excel_icon.png" alt="">
+</a>
+<a href="#" class="py-2">
+<img src="public/icons/pdf_icon.png" alt="">
+
+</a>
+</div>
+</td>
+
+<td>
+<div class="dropdown custom-dropdown">
+<div class="btn sharp tp-btn" data-toggle="dropdown" aria-expanded="false">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+</div>
+<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(39px, 40px, 0px);">
+<a class="dropdown-item" href="#">Option 1</a>
+<a class="dropdown-item" href="#">Option 2</a>
+<a class="dropdown-item" href="#">Option 3</a>
+</div>
+</div>
+</td>
+
+</tr>
+             
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+						<div class="card-footer d-flex flex-wrap justify-content-between">
+                            <div class="mb-3">showing 21 - 30 of 26 results</div>
+							<nav>
+								<ul class="pagination">
+									<li class="page-item page-indicator">
+										<a class="page-link" href="javascript:void()">
+											Previous</a>
+									</li>
+									<li class="page-item active"><a class="page-link" href="javascript:void()">1</a>
+									</li>
+									<li class="page-item"><a class="page-link" href="javascript:void()">2</a></li>
+									<li class="page-item"><a class="page-link" href="javascript:void()">3</a></li>
+									<li class="page-item"><a class="page-link" href="javascript:void()">4</a></li>
+									<li class="page-item page-indicator">
+										<a class="page-link" href="javascript:void()">
+											Next</a>
+									</li>
+								</ul>
+							</nav>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
         </div>
+
+			
+    </div>
         <!--**********************************
             Content body end
         ***********************************-->
@@ -1009,7 +1372,7 @@
         
 		<div class="footer">
     <div class="copyright">
-        <p>Copyright © Designed &amp; Developed by <a href="http://dexignzone.com/" target="_blank">DexignZone</a> 2020</p>
+        <p>Copyright © Designed &amp; Developed by <a href="https://brightbridge.co/" target="_blank">BBIT</a> 2023</p>
     </div>
 </div>		
         <!--**********************************
@@ -1035,13 +1398,15 @@
     ***********************************-->
 	<script src="public/vendor/global/global.min.js" type="text/javascript"></script>
 					<script src="public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
-				<script src="public/vendor/lightgallery/js/lightgallery-all.min.js" type="text/javascript"></script>
+				<script src="public/vendor/chart.js/Chart.bundle.min.js" type="text/javascript"></script>
+				<script src="public/vendor/apexchart/apexchart.js" type="text/javascript"></script>
+				<script src="public/vendor/bootstrap-datetimepicker/js/moment.js" type="text/javascript"></script>
+				<script src="public/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+				<script src="public/vendor/peity/jquery.peity.min.js" type="text/javascript"></script>
+				<script src="public/vendor/apexchart/apexchart.js" type="text/javascript"></script>
+				<script src="public/js/dashboard/dashboard-1.js" type="text/javascript"></script>
 				<script src="public/js/custom.min.js" type="text/javascript"></script>
 				<script src="public/js/deznav-init.js" type="text/javascript"></script>
-		<!--		<script src="https://welly.dexignzone.com/laravel/demo/js/custom.min.js" type="text/javascript"></script>
-			<script src="https://welly.dexignzone.com/laravel/demo/js/deznav-init.js" type="text/javascript"></script> -->
-<!--	
- 	--></body>
+</body>
 
-<!-- Mirrored from welly.dexignzone.com/laravel/demo/uc-lightgallery by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 May 2022 05:37:28 GMT -->
 </html>
